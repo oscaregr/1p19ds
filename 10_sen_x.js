@@ -6,7 +6,9 @@ function factori(a){ ///factorial
     }
     return tot ;
 }
-
+function sen_v(x){
+    return Math.sin(x)
+}
 function sen_x(x){
     let tota = x
     let cambi = false
@@ -23,12 +25,10 @@ function sen_x(x){
     console.log(tota);
 }
 
-function sen_v(x){
-    return Math.sin(x)
-}
+
 
 
 
 //// test code ////
 sen_v(8)
-sen_x(8)
+
