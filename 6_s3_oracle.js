@@ -15,5 +15,7 @@ function op2(){
 
 
 //// test code
+console.log("primera forma")
 console.log(op1());
+console.log("segunda forma")
 console.log(op2());

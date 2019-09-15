@@ -26,7 +26,6 @@ function ordenado(arr){
 	return order;
 }
 
-
 ///// test of code \\\\\
 console.log(array)
 console.log("Esta ordenado? ")

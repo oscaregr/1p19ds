@@ -15,7 +15,5 @@ let mcm = function (a, b){
     return a*b/MCD(a,b);
 }
 
-
-
 //// test code
 mcm(4,8)

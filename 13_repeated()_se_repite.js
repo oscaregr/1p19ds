@@ -17,4 +17,4 @@ function repite(re){
 ///// test of code \\\\\
 
 console.log(array + "\n se repite?")
-console.log(repite(array))
+repite(array)

@@ -11,6 +11,5 @@ function permu(n,r){
 	return factori(n)/factori(n-r)
 }
 
-
 //// test code
-console.log(permu(5,3))
+console.log(permu(6,3))

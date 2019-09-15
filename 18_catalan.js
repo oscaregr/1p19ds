@@ -7,8 +7,8 @@ function factorial(fact){
 }
 
 function catalan(n){
-    for(let i=1; i<=n;i++){
-        console.log(factorial(i*2)/(factorial(i+1)*factorial(i)))
+    for(let i=0; i<=n;i++){
+        console.log("El numero catalan de "+i+" es : "+factorial(i*2)/(factorial(i+1)*factorial(i)))
     }
     
 }

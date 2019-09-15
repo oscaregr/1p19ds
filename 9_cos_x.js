@@ -1,12 +1,3 @@
-function factori(a){ ///factorial
-    let tot = a;
-    a = a-1; 
-    for(let e=1; a >= e; a--){
-        tot = tot * a;
-    }
-    return tot ;
-}
-
 function cos_x(x){
     let res = 1
     let e = 2
@@ -21,14 +12,16 @@ function cos_x(x){
         }
         e=e+2;
     }
-    console.log(res)
+    return Math.cos(x)
+}
+function factori(a){ ///factorial
+    let tot = a;
+    a = a-1; 
+    for(let e=1; a >= e; a--){
+        tot = tot * a;
+    }
+    return tot ;
 }
 
-function cos_v(x){
-    Math.cos(x)
-}
-
-
-//// test code
-cos_v(4)
+///test code
 cos_x(4)

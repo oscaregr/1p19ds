@@ -16,4 +16,4 @@ function conbi(s,e){
 
 
 //// test code
-console.log(conbi(5,3))
+console.log(conbi(6,3))

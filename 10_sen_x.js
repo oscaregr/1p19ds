@@ -1,12 +1,3 @@
-function factori(a){ ///factorial
-    let tot = a;
-    a = a-1; 
-    for(let e=1; a >= e; a--){
-        tot = tot * a;
-    }
-    return tot ;
-}
-
 function sen_x(x){
     let tota = x
     let cambi = false
@@ -19,16 +10,18 @@ function sen_x(x){
             cambi = true
         }
     }
-
-    console.log(tota);
-}
-
-function sen_v(x){
     return Math.sin(x)
+ 
 }
-
-
+function factori(a){ ///factorial
+    let tot = a;
+    a = a-1; 
+    for(let e=1; a >= e; a--){
+        tot = tot * a;
+    }
+    return tot ;
+}
 
 //// test code ////
-sen_v(8)
+
 sen_x(8)

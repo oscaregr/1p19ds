@@ -11,7 +11,5 @@ function MCD (x,y){
     return y;
 }
 
-
-
 /////test code
 MCD (4,2)
