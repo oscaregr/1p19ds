@@ -11,8 +11,8 @@ function sen_x(x){
         }
     }
     return Math.sin(x)
- 
 }
+
 function factori(a){ ///factorial
     let tot = a;
     a = a-1; 
@@ -22,6 +22,5 @@ function factori(a){ ///factorial
     return tot ;
 }
 
-//// test code ////
-
+//// test code 
 sen_x(8)
