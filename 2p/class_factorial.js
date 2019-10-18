@@ -4,12 +4,13 @@ class Vector{
     }
 }
 class Factorial{
-    constructor(){
+    constructor(n){
+        this.fa= n
         this.costo = null
         this.vec_suc = []
         this.vec_tabl = []
     }
-    value(r){
+    value(r = this.fa){
     this.vec_suc[this.costo] = r
     this.costo +=1
     this.vec_tabl[this.costo]= this.costo
@@ -31,9 +32,9 @@ class Factorial{
 }
 
 const fac = (function(){
-    let f = new Factorial
+    let f = new Factorial(10)
     console.log("\n valor")
-    console.log(f.value(10))
+    console.log(f.value())
     console.log("\n costo")
     console.log(f.cost())
     console.log("\n sucesion")
