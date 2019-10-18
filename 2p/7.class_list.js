@@ -25,12 +25,12 @@ class Lista {
     }
   
     deleteHead() {
-      this.head.next = this.head.next.next;
+      this.head = this.head.next;
       this.length--;
     }
   
     deleteTail() {
-      let temp = this.head.next;
+      let temp = this.head;
       for (let i = 1; i < this.length - 1; i++) {
         temp = temp.next;
       }
