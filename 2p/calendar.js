@@ -37,6 +37,16 @@ class Calendar{
     }
 //day(d,m,y)
 }
+
+(function(){
+    let c = new Calendar()
+    console.log("primer dia del año")
+    console.log(c.firstDayYear(2019))
+    console.log("es año visiesto")
+    console.log(c.isLeapYear(2019))
+    console.log("el dia, mas el plus")
+    console.log(c.todayPlus(3,10))
+})()
     /*
     friday13(year){
         let count = 0;
