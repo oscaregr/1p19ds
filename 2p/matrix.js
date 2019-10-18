@@ -22,7 +22,7 @@ class Matris{
         this._fila = f
         this._columna = c
         this.Matryx =  this.initRandom() 
-      
+        
     }
     
    /* distinge(a){
