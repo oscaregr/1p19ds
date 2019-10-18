@@ -9,7 +9,7 @@ class Card{
         return k + n * 13;
       }//// se ingreas el tipo y numero, da lo del primero
     ThreeOfaKind(){
-       return ((13*4)*(12*4)*(11*4))/2
+       return (((13*4)*(12*4)*(11*4))/2)/2598960
     }//team3only
 
 }
