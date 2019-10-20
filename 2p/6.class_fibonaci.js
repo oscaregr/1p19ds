@@ -26,7 +26,6 @@ class Fibonaci{
             return r < 2 ? r : re(r-1) + re(r-2);
         }
         return this.va
-        
     } ///el resultado int
     cost(){
         return this.costo
@@ -37,7 +36,6 @@ class Fibonaci{
     table(){
         return new Vector(this.vec_tabl)
     }
-        ///Vector
 }
 /// test code
 const fib = (function(){

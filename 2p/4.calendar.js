@@ -67,12 +67,11 @@ class Calendar{
         if(m === 12){
             this.first = this.todayPlus(this.first,this.inc)
             this.inc = 31}
-        let col = 0
             let row = 0
             let f = null
             for (let i =0; i< this.inc; i++){
                 f = (this.todayPlus(this.first,i))
-                if(f === 0 && i === 0){}else if(f === 0 ){col = 0
+                if(f === 0 && i === 0){}else if(f === 0 ){
                     row+=1}
                 this.cal[row][f] = i +1
                 if(f != 0){

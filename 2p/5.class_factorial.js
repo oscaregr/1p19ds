@@ -11,7 +11,6 @@ class Factorial{
         this.vec_suc = []
         this.vec_tabl = []
     }
-    
     value(r = this.fa){
         let c = 0
         for(let i = 0; i <= r; i++){
@@ -26,9 +25,6 @@ class Factorial{
             return n < 2 ? n : n * re(n-1)
         }
         return this.res
-    
-    /// factorial
-    
     } ///el resultado int
     cost(){
         return this.costo
@@ -41,7 +37,6 @@ class Factorial{
     }
         ///Vector
 }
-
 const fac = (function(){
     let f = new Factorial(6)
     console.log("\n valor")
@@ -53,4 +48,3 @@ const fac = (function(){
     console.log("\n tabla")
     console.log(f.table())
 })()
-///f.cost()
