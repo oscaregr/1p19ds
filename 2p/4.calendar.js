@@ -105,7 +105,7 @@ class Calendar{
 (function(){
     let c = new Calendar()
     console.log("el mes")
-    console.log(c.printCalendar(1,2019))
+    console.log(c.printCalendar(10,2019))
     console.log("primer dia del año")
     console.log(c.firstDayYear(2019))
     console.log("es año visiesto")

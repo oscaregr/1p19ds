@@ -128,6 +128,7 @@ const mat = (function(){
     /// test code 
     console.log("\n ***** valores random *****") 
     const matris = new Matris(4,4)
+    console.log(matris.Matryx)
     console.log("\n obtener columna")
     console.log(matris.getCol(1))
     console.log("\n obtener fila")

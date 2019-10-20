@@ -16,7 +16,11 @@ class Card{
 
 (function(){
 let f = new Card
+  console.log("regresa el palo y el numero de la carta")
     console.log(f.printCard(10))
+  console.log("regresa el numero corrspondiente en base al total de las cartas")
+
     console.log(f.printNumber(3,2))
+    console.log("regresa la probavilidad de tener una tercia")
     console.log(f.ThreeOfaKind())
 })()
