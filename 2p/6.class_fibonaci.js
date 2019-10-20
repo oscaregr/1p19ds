@@ -6,16 +6,27 @@ class Vector{
 class Fibonaci{
     constructor(n){
         this.va = n
-        this.costo = null
+        this.res = null
+        this.costo = 0
         this.vec_suc = []
         this.vec_tabl = []
     }
     value(n = this.va){
-    this.vec_suc[this.costo] = n
-    this.costo +=1
-    this.vec_tabl[this.costo]= this.costo
-    return n < 2 ? n : this.value(n-1) + this.value(n-2);
-
+        let c = 0
+        this.costo
+        for(let i = 0; i <= n; i++){
+            this.res = re(i)
+            this.vec_suc[i] = this.res
+            this.vec_tabl[i]= c 
+            this.costo = c
+            c=0           
+        }
+        function re(r){
+            c ++
+            return r < 2 ? r : re(r-1) + re(r-2);
+        }
+        return this.va
+        
     } ///el resultado int
     cost(){
         return this.costo
@@ -30,7 +41,7 @@ class Fibonaci{
 }
 /// test code
 const fib = (function(){
-    let f = new Fibonaci(10)
+    let f = new Fibonaci(6)
     console.log("\n valor")
     console.log(f.value())
     console.log("\n costo")

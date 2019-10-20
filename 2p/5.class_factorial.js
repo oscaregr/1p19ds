@@ -6,16 +6,27 @@ class Vector{
 class Factorial{
     constructor(n){
         this.fa= n
+        this.res = null
         this.costo = null
         this.vec_suc = []
         this.vec_tabl = []
     }
+    
     value(r = this.fa){
-    this.vec_suc[this.costo] = r
-    this.costo +=1
-    this.vec_tabl[this.costo]= this.costo
-    return r < 2 ? r : r * this.value(r-1)
- 
+        let c = 0
+        for(let i = 0; i <= r; i++){
+            this.res = re(i)
+            this.vec_suc[i] = this.res
+            this.vec_tabl[i]= c 
+            this.costo = c
+            c=0           
+        }
+        function re(n){
+            c ++
+            return n < 2 ? n : n * re(n-1)
+        }
+        return this.res
+    
     /// factorial
     
     } ///el resultado int
@@ -32,7 +43,7 @@ class Factorial{
 }
 
 const fac = (function(){
-    let f = new Factorial(10)
+    let f = new Factorial(6)
     console.log("\n valor")
     console.log(f.value())
     console.log("\n costo")
