@@ -20,7 +20,7 @@ let f = new Card
     console.log(f.printCard(10))
   console.log("regresa el numero corrspondiente en base al total de las cartas")
 
-    console.log(f.printNumber(3,2))
+    console.log(f.printNumber(10,0))
     console.log("regresa la probavilidad de tener una tercia")
     console.log(f.ThreeOfaKind())
 })()
