@@ -7,8 +7,8 @@ class Node{
 
 class Lista {
     constructor(no) {
-      this.ca = new Node(null);
-      this.co = new Node(null);
+      this.ca = new Node();
+      this.co = new Node();
       this.ca.next = no
       this.co.next = no
       this.length = 1;
@@ -48,7 +48,7 @@ class Lista {
     toString() {
       let s = "";
       let tn = this.ca;
-      for (let i = 0; i <= this.length; i++) {
+      for (let i = 1; i <= this.length; i++) {
         s += tn.data + ", ";
         tn = tn.next;
       }
@@ -57,7 +57,7 @@ class Lista {
   }
   
 (function(){
- const no1 = new Node(1)
+ const no1 = new Node(null)
  const no2 = new Node(2)
  const no3 = new Node(3)
  const no4 = new Node(4)
