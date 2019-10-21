@@ -6,36 +6,38 @@ class Node{
 }
 
 class Lista {
-    constructor(node) {
-      this.head = node;
-      this.tail = node;
+    constructor(no) {
+      this.ca = new Node(null);
+      this.co = new Node(null);
+      this.ca.next = no
+      this.co.next = no
       this.length = 1;
     }
   
-    insertHead(node) {
-      node.next = this.head;
-      this.head = node;
+    insertHead(no) {
+      no.next = this.ca.next
+      this.ca.next = no;
       this.length++;
     }
   
-    insertTail(node) {
-      this.tail.next = node;
-      this.tail = this.tail.next;
+    insertTail(no) {
+      this.co.next.next = no;
+      this.co.next = no;
       this.length++;
     }
   
     deleteHead() {
-      this.head = this.head.next;
+      this.ca.next = this.ca.next.next;
       this.length--;
     }
   
     deleteTail() {
-      let temp = this.head;
+      let t = this.ca;
       for (let i = 1; i < this.length - 1; i++) {
-        temp = temp.next;
+        t = t.next;
       }
-      temp.next = null;
-      this.tail.next = temp;
+      t.next = null;
+      this.co.next = t;
       this.length--;
     }
   
@@ -44,13 +46,13 @@ class Lista {
     }
   
     toString() {
-      let tempString = "";
-      let tempNode = this.head;
-      for (let i = 1; i <= this.length; i++) {
-        tempString += tempNode.data + " ";
-        tempNode = tempNode.next;
+      let s = "";
+      let tn = this.ca;
+      for (let i = 0; i <= this.length; i++) {
+        s += tn.data + ", ";
+        tn = tn.next;
       }
-      return tempString;
+      return s;
     }
   }
   
@@ -62,9 +64,10 @@ class Lista {
 let lis = new Lista(no1)
     lis.insertHead(no2)
     lis.insertHead(no3)
-    lis.insertHead(no4)    
-    console.log(lis)
-    lis.deleteTail()
+    lis.insertHead(no4)  
+    console.log(lis.toString())
+    lis.deleteTail()  
+    console.log(lis.toString())
     lis.deleteHead()
-    console.log(lis)
+    console.log(lis.toString())
 })()
