@@ -13,7 +13,7 @@ class two_three_four{
         let v = this.valores
         for(let i = 0 ; i< this.tree.length; i++){
             if(rep(x)){
-                if(this.tree[0][i] != null && i <2){
+                if(this.tree[0][i] != null ){ //&& i <2
                 
                     if (x < this.tree[0][i]){
                         this.p = i+1
@@ -26,14 +26,14 @@ class two_three_four{
                         
                     } 
                 }
-                if(this.tree[0][i] != null && i === 2){
+                /*if(this.tree[0][i] != null && i === 2){
                 
                     if (x > this.tree[0][i]){
                         this.p = i+1
                         this.acomo(x)
                     }
                     
-                }
+                }*/
             }
         }
         function rep (r){
@@ -74,20 +74,30 @@ class two_three_four{
 
     }
     acomo(x){
+        let t = null
         for(let i =0; i<2;i++){
-            if(this.tree[this.p][i] === null){
-                this.tree[this.p][i] = x 
-                this.orde()
-            }else if(this.tree[this.p][i] === x){
+             if(this.tree[this.p][i] === x){
                 console.log("ese valor ya esta en el arbol")
+                t = false
+                break
+            }else{t = true}
+        }
+        if(t){
+            for(let i = 0; i<2;i++){
+                if(this.tree[this.p][i] === null){
+                    this.tree[this.p][i] = x 
+                    this.orde()
+                }
             }
         }
+        
     }
 }
 
 (function(){
     let a = new two_three_four()
-    
+    a.add(20)
+    a.add(80)
     a.add(65)
     a.add(90)
     a.add(10)
