@@ -34,12 +34,12 @@ class two_three_four{
                     } 
                 }
                 /*if(this.tree[0][i] != null && i === 2){
-                
+
                     if (x > this.tree[0][i]){
                         this.p = i+1
                         this.acomo(x)
                     }
-                    
+
                 }*/
             }
         }
@@ -128,12 +128,26 @@ class two_three_four{
     a.add(20)
     a.add(80)
     a.add(65)
+   // console.log(a.tree)
+
+    /*
+    
     a.add(90)
+    console.log(a.tree)
+
+*/
+
+    /*
+    
     a.add(50)
+    
     a.add(30)
+    console.log(a.tree)
+    
     a.add(35)
     a.add(32)
+    console.log(a.tree)
     
-    console.log(a.valores)
+    console.log(a.valores)*/
    // a.reorden()
     console.log(a.tree)
