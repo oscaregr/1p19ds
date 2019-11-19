@@ -122,7 +122,7 @@ class two_three_four{
         this.re = [0]
     }
 }
-
+ 
 
     let a = new two_three_four()
     a.add(20)
@@ -130,15 +130,9 @@ class two_three_four{
     a.add(65)
    // console.log(a.tree)
 
-    /*
-    
     a.add(90)
     console.log(a.tree)
 
-*/
-
-    /*
-    
     a.add(50)
     
     a.add(30)
@@ -148,6 +142,6 @@ class two_three_four{
     a.add(32)
     console.log(a.tree)
     
-    console.log(a.valores)*/
+    console.log(a.valores)
    // a.reorden()
     console.log(a.tree)
