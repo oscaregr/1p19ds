@@ -135,7 +135,7 @@ let a = (function(){
     t.insert("hijo3")
     t.insert("4")
    /// console.log(t.node.left.data)
-    t.yours()
+   
 
     t.remove("4")
 
