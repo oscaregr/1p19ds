@@ -135,12 +135,13 @@ let a = (function(){
     t.insert("hijo3")
     t.insert("4")
    /// console.log(t.node.left.data)
-   
-
+   console.log("grafo")
+   t.yours()
+   console.log("\n remove")
     t.remove("4")
 
     t.yours()
-
+    console.log("\n bft")
     t.bft()
 
     console.log(t.node)

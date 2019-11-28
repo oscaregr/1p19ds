@@ -122,11 +122,13 @@ let a = (function(){
     t.insert(6)
     t.insert(1)
    /// console.log(t.node.left.data)
-    
-
+    console.log("grafo")
+    t.yours()
+    console.log("\n remove")
     t.remove(1)
 
     t.yours()
+    console.log("\n bft")
 
     t.bft()
 
