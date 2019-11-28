@@ -10,6 +10,8 @@ class Grafo{
 	///	this.matris = this.convert(x)
 	this.grafo = {}
 	this.ma = -1
+	this.matris = [[0,1,1,0],[1,0,0,1],[1,0,0,1],[0,1,1,0]]
+	///this.d = [[0,1,1,0],[1,0,0,1],[0,0,1,1],[1,1,0,0]]
 	}
 	
 	convert(a=this.grafo){
@@ -48,28 +50,33 @@ class Grafo{
 		this.grafo[d]= []
 	}
 	
-	distinge(){
+	imprime(){
+		console.log(this.grafo)
+	}
+
+
+	multigraph(){
 		let con = 0
-		
+		let iy = false
 		for(let i = 0; i< this.matris.length ; i++){
 			for(let a = 0; a< this.matris[i].length; a++){
 				con += this.matris[i][a]
 				}
-			if(con === 1 || con === this.matris.length){
+			if(con === 1 || con === this.matris[i].length){
 				
-				return true
-			}
+				iy =  true
+			}else{iy=false; break}
 			con = 0
 			for(let a = 0; a< this.matris[i].length; a++){
 				con += this.matris[a][i]
 				}
-			if(con === 1 || con === this.matris.length){
+			if(con === 1 || con === this.matris[a].length){
 				
-				return true
-			}
+				iy= true
+			}else{iy=false; break}
 			con = 0
 		}
-		return false
+		console.log(iy)
 	}
 	
 	sub_grafo(){
@@ -79,7 +86,7 @@ class Grafo{
 	grafo_completo(){
 		
 	}
-	isDirected(ma){
+	isDirected(ma=this.matris){
 		///let ma = this.Matryx
 	   if(this.isSquared(ma)){
 		   for (let i =1; i<ma.length; i++){
@@ -125,6 +132,8 @@ class Grafo{
 	}*/
 
 }
+let a = (function(){
+
 
 let g = new Grafo()
 g.vertices_nodos_add("a")
@@ -138,15 +147,13 @@ g.ligar("d","b")
 g.ligar("d","e")
 g.ligar("e","a")
 g.ligar("a","d")
-let a = [[0,1,1,1],[1,0,0,1],[1,0,0,1],[1,1,1,0]]
-let b = [[0,1,1,0],[0,0,0,1],[0,0,0,1],[1,0,0,0]]
-
-let c = [[0,1,1,0],[1,0,0,1],[0,0,1,1],[1,1,0,0]]
-let d = [[0,1,1,0],[1,0,0,1],[0,0,1,1],[1,1,0,0]]
+g.imprime()
+g.multigraph()
 //console.log(a)
-g.isDirected(a)
+g.isDirected()
 //console.log(b)
-g.isDirected(b)
-console.log(g.grafo)
 
-///g.isIsomorfico(c,b)
+
+
+})()
+
