@@ -85,8 +85,6 @@ class Tree{
     }//traversal
    
 
-
-
     bft(c=this.node,l=this.l,m=this.m){
         let n = -1
         res(c,l)
@@ -139,7 +137,7 @@ let a = (function(){
    /// console.log(t.node.left.data)
     t.yours()
 
-    t.remove("Padre2")
+    t.remove("4")
 
     t.yours()
 
